@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/backgroundlogin"
+    android:orientation="vertical">
+    <TextView
+        android:text="ĐĂNG KÝ"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+    <EditText
+        android:drawableLeft="@drawable/ic_account"
+        android:drawablePadding="12dp"
+        android:background="@drawable/custom_loginout"
+        android:hint="Tài khoản"
+        android:id="@+id/edittextdangkytaikhoan"
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp">
+    </EditText>
+    <EditText
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="12dp"
+        android:background="@drawable/custom_loginout"
+        android:hint="Mật khẩu"
+        android:id="@+id/edittextdangkymatkhau"
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp">
+    </EditText>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/custom_button"
+            android:layout_marginRight="15dp"
+            android:id="@+id/buttondangkydongy"
+            android:text="ĐỒNG Ý"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+        <Button
+            android:background="@drawable/custom_button"
+            android:text="HỦY"
+            android:id="@+id/buttondangkyhuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

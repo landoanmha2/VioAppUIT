@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textViewfont"
+        android:text="Font"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/textViewfont"
+        android:background="@drawable/custom_loginout"
+        android:padding="10dp"
+        android:id="@+id/buttonMonospace"
+        android:fontFamily="monospace"
+        android:textSize="25sp"
+        android:text="Gabria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/custom_loginout"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/buttonMonospace"
+        android:id="@+id/buttonSerif"
+        android:fontFamily="serif"
+        android:textSize="25sp"
+        android:text="Serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <Button
+        android:id="@+id/buttonCasual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/buttonSerif"
+        android:background="@drawable/custom_loginout"
+        android:fontFamily="casual"
+        android:padding="10dp"
+        android:text="Causual"
+        android:textSize="20sp"></Button>
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/buttonMonospace"
+        android:text="Size"
+        android:id="@+id/textViewgioithieu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <SeekBar
+        android:id="@+id/seekBarSize"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/buttonMonospace"
+        android:layout_toRightOf="@id/textViewgioithieu"
+        android:layout_width="320dp"
+        android:layout_height="35dp">
+    </SeekBar>
+</RelativeLayout>

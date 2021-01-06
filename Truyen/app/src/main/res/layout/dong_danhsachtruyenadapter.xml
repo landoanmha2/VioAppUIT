@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="5dp">
+    <RelativeLayout
+        android:background="@drawable/custom_loginout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewlistchuongacti2"
+            android:text="C1: Long Thần Giáng Thế"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_marginTop="2dp">
+        </TextView>
+        <ImageView
+            android:src="@drawable/iconbinhluan"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imageViewbinhluan"
+            android:layout_width="30dp"
+            android:layout_height="30dp">
+        </ImageView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

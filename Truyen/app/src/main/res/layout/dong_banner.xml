@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageViewbackgroundBanner"
+        android:scaleType="fitXY">
+    </ImageView>
+    <View
+        android:background="@drawable/custom_background_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageViewbackgroundBanner"
+        android:id="@+id/relative1">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="2dp"
+            android:id="@+id/imageViewbanner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imageViewbanner"
+            android:layout_alignTop="@id/imageViewbanner"
+            android:id="@+id/textViewtitleBannerTRUYEN"
+            android:textSize="17sp"
+            android:text="Long thần giáng thế"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold">
+        </TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewtitleBannerTRUYEN"
+            android:layout_toRightOf="@id/imageViewbanner"
+            android:layout_marginTop="7dp">
+            <TextView
+                android:id="@+id/textViewTheLoai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginRight="40dp"
+                android:maxLines="2"
+                android:text="Là thần hay là ma duy ta nhất niệm"
+                android:textColor="#FFFFFF"
+                android:textStyle="italic">
+
+            </TextView>
+
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

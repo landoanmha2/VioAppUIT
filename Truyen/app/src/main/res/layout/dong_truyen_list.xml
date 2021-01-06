@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/custom_loginout"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutlisttruyen">
+    <ImageView
+        android:background="@drawable/custom_loginout"
+        android:scaleType="fitXY"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="2dp"
+        android:id="@+id/imageViewbackgroundlist"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    </ImageView>
+    <ImageView
+        android:background="@drawable/custom_loginout"
+        android:scaleType="fitXY"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:padding="2dp"
+        android:id="@+id/imageViewtruyenlist"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/imageViewtruyenlist"
+        android:layout_alignTop="@id/imageViewtruyenlist"
+        android:id="@+id/textViewTenTruyen"
+        android:textSize="17sp"
+        android:text="TOÀN CHỨC CAO THỦ"
+        android:textColor="#000000"
+        android:textStyle="bold">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTheLoai"
+        android:textSize="17sp"
+        android:textColor="#464646"
+        android:textStyle="italic"
+        android:text="Đô thị, Võng Du"
+        android:layout_toRightOf="@id/imageViewtruyenlist"
+        android:layout_below="@id/textViewTenTruyen">
+    </TextView>
+    <TextView
+        android:id="@+id/textViewTacGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="#464646"
+        android:textStyle="italic"
+        android:text="Hồ Điệp Lam"
+        android:layout_toRightOf="@id/imageViewtruyenlist"
+        android:layout_below="@id/textViewTheLoai">
+    </TextView>
+    <TextView
+        android:id="@+id/textViewTenChuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="#464646"
+        android:textStyle="italic"
+        android:text="C1: Cao thủ bị trục xuất"
+        android:layout_toRightOf="@id/imageViewtruyenlist"
+        android:layout_below="@id/textViewTacGia">
+    </TextView>
+
+</RelativeLayout>

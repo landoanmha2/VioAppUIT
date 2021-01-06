@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/custom_loginout"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:background="@drawable/custom_loginout"
+        android:scaleType="fitXY"
+        android:layout_margin="3dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageViewbackgroundtimkiem">
+    </ImageView>
+    <ImageView
+        android:background="@drawable/custom_loginout"
+        android:scaleType="fitXY"
+        android:layout_margin="3dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageViewtimkiem">
+    </ImageView>
+    <TextView
+        android:layout_toRightOf="@id/imageViewtimkiem"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        android:maxWidth="250dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:id="@+id/textviewtimkiemtentruyen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên truyện"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </TextView>
+    <TextView
+        android:layout_toRightOf="@id/imageViewtimkiem"
+        android:layout_below="@id/textviewtimkiemtentruyen"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        android:maxWidth="250dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:id="@+id/textviewtimkiemtheloai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thể loại"
+        android:textColor="#464646"
+        android:textSize="20sp"
+        android:textStyle="italic">
+    </TextView>
+    <TextView
+        android:layout_toRightOf="@id/imageViewtimkiem"
+        android:layout_below="@id/textviewtimkiemtheloai"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        android:maxWidth="250dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:id="@+id/textviewtimkiemtacgia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tác giả"
+        android:textColor="#464646"
+        android:textSize="20sp"
+        android:textStyle="italic">
+    </TextView>
+</RelativeLayout>

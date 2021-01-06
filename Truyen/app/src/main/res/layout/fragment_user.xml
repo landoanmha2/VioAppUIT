@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/backgrounduser">
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:text="HỒ SƠ NGƯỜI DÙNG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+        <TextView
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:id="@+id/taikhoan"
+            android:textSize="30sp"
+            android:text="Tài khoản:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/textViewtentaikhoan"
+            android:padding="5dp"
+            android:layout_toRightOf="@+id/taikhoan"
+            android:textSize="30sp"
+            android:text="trantichdong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/matkhau"
+            android:padding="5dp"
+            android:textSize="30sp"
+            android:text="Mật khẩu:"
+            android:layout_below="@+id/taikhoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="30sp"
+            android:id="@+id/textViewmatkhauuser"
+            android:layout_below="@+id/textViewtentaikhoan"
+            android:layout_toRightOf="@+id/matkhau"
+            android:text="dongdong123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </RelativeLayout>
+    <Button
+        android:background="@drawable/custom_button"
+        android:id="@+id/dangxuat"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:text="ĐĂNG XUẤT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
+</LinearLayout>

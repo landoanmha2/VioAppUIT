@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Activity.BinhLuanActivity">
+    
+    <androidx.appcompat.widget.Toolbar
+        android:background="?android:attr/windowBackground"
+        android:id="@+id/toolbarbinhluan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_above="@id/relativelayoutbinhluan"
+        android:layout_below="@id/toolbarbinhluan"
+        android:id="@+id/recyclerviewbinhluan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+    
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:padding="4dp"
+        android:background="#FFF"
+        android:id="@+id/relativelayoutbinhluan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageviewnguoidung"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <EditText
+            android:layout_toLeftOf="@id/textviewpost"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/editextaddcomment"
+            android:hint="Add a Comment..."
+            android:layout_toRightOf="@id/imageviewnguoidung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+        
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:text="POST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textviewpost"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp">
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>
